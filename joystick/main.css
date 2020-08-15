@@ -5,12 +5,32 @@
     margin: auto;
 }
 
-.circle {
+.circle-horizontal {
     background: red;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     position: relative;
-    left: 375px;
     top: 375px;
+    left: 375px;
+}
+
+.circle-horizontal, .circle-vertical {
+    transition: transform 0.15s linear;
+}
+
+.horizontal-left {
+    transform: translateX(-375px);
+}
+
+.horizontal-right {
+    transform: translateX(375px);
+}
+
+.vertical-down {
+    transform: translateY(375px);
+}
+
+.vertical-up {
+    transform: translateY(-375px);
 }

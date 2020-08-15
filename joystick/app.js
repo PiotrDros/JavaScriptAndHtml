@@ -1,41 +1,40 @@
 window.addEventListener("load", function () {
-  const circle = document.getElementsByClassName("circle")[0];
-  const defaultTop = circle.style.top;
-  const defaultLeft = circle.style.left;
+  const circleHorizontal = document.getElementById("circle-horizontal");
+  const circleVertical = document.getElementById("circle-vertical");
 
   document.addEventListener("keydown", (e) => {
     if (e.code === "ArrowUp") {
-      circle.style.top = "0px";
+      circleVertical.classList.add("vertical-up");
     }
 
     if (e.code === "ArrowDown") {
-      circle.style.top = "750px";
+      circleVertical.classList.add("vertical-down");
     }
 
     if (e.code === "ArrowLeft") {
-      circle.style.left = "0px";
+      circleHorizontal.classList.add("horizontal-left");
     }
 
     if (e.code === "ArrowRight") {
-      circle.style.left = "750px";
+      circleHorizontal.classList.add("horizontal-right");
     }
   });
 
   document.addEventListener("keyup", (e) => {
     if (e.code === "ArrowUp") {
-      circle.style.top = defaultTop;
+      circleVertical.classList.remove("vertical-up");
     }
 
     if (e.code === "ArrowDown") {
-      circle.style.top = defaultTop;
+      circleVertical.classList.remove("vertical-down");
     }
 
     if (e.code === "ArrowLeft") {
-      circle.style.left = defaultLeft;
+      circleHorizontal.classList.remove("horizontal-left");
     }
 
     if (e.code === "ArrowRight") {
-      circle.style.left = defaultLeft;
+      circleHorizontal.classList.remove("horizontal-right");
     }
   });
 });
