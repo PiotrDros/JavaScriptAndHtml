@@ -1,0 +1,13 @@
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.flexcontainer > div {
+  flex-basis: 100%;
+}
+
+#tree {
+  width: 60%;
+}
+
