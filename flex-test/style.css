@@ -1,0 +1,18 @@
+.flex-container {
+  background-color: #f0ffff;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-item {
+  background-color: beige;
+  border:  1px solid black;
+  margin: 0.5rem;
+  min-height: 2rem;
+  width: 3rem;
+}
+
+li {
+  list-style: none;
+}
