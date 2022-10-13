@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 1px solid grey;
+  float: left;
+  width: 20%;
+  background: #f1f1f1;
+}
+
+.magnifier {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  border: 1px solid grey;
+  border-left: none;
+}
+
+.clear {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #f34821;
+  color: white;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.clear:hover {
+  background: #972e05;
+}
+
+.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hide {
+  display: none;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.person {
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.person:hover {
+  background: #bfd5e8;
+}
+
+.list {
+ list-style: none;
+}
